@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#09090b"><meta name="description" content="ARISEE Free Fire Diamonds">
+<title>ARISEE — Free Fire Diamonds</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<style>
+/* ARISEE x Free Fire / Garena-inspired visual theme */
+:root{--bg:#070708;--panel:#101012;--panel2:#171719;--line:#2b2521;--fire:#ff5a00;--fire2:#ffb000;--red:#d71920;--text:#f8f7f4;--muted:#a4a0a0}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{background:#070708;color:var(--text);margin:0;font-family:Manrope,Arial,sans-serif}
+body{min-height:100vh;position:relative;overflow-x:hidden;background:
+radial-gradient(circle at 50% -10%,rgba(255,90,0,.22),transparent 32%),
+radial-gradient(circle at 100% 45%,rgba(215,25,32,.12),transparent 28%),
+linear-gradient(180deg,#09090b 0%,#070708 55%,#050506 100%)}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.22;background:
+repeating-linear-gradient(135deg,transparent 0 36px,rgba(255,90,0,.035) 37px,transparent 38px 76px),
+linear-gradient(90deg,transparent 0 49.5%,rgba(255,255,255,.018) 50%,transparent 50.5%);z-index:-1}
+body:after{content:"";position:fixed;left:-15%;right:-15%;bottom:-120px;height:280px;pointer-events:none;background:radial-gradient(ellipse at center,rgba(255,90,0,.15),transparent 65%);filter:blur(30px);z-index:-1}
+.wrap{max-width:1080px;margin:auto;padding:0 24px}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:16px 24px;position:sticky;top:0;z-index:20;background:rgba(7,7,8,.94);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,90,0,.18);box-shadow:0 8px 30px rgba(0,0,0,.35)}
+.brand{font-family:Rajdhani,Arial,sans-serif;font-weight:700;letter-spacing:.14em;font-size:19px;display:flex;gap:10px;align-items:center}
+.brand-mark{width:34px;height:34px;display:grid;place-items:center;background:linear-gradient(145deg,#ffd35a 0%,#ff6a00 52%,#c91519 100%);color:#080808;font-weight:900;clip-path:polygon(50% 0,92% 16%,100% 68%,70% 100%,30% 100%,0 68%,8% 16%);box-shadow:0 0 22px rgba(255,90,0,.35)}
+.support-link{color:#f1e8e2;text-decoration:none;border:1px solid #3a2a24;background:rgba(255,90,0,.04);padding:9px 14px;border-radius:999px;font-size:12px;transition:.2s}
+.support-link:hover{border-color:var(--fire);color:#fff;box-shadow:0 0 18px rgba(255,90,0,.16)}
+.hero{padding-top:70px;padding-bottom:45px;position:relative}
+.hero:after{content:"FREE FIRE";position:absolute;right:20px;top:65px;font:900 clamp(48px,10vw,110px)/.8 Rajdhani,sans-serif;letter-spacing:.04em;color:rgba(255,255,255,.025);transform:skew(-8deg);pointer-events:none}
+.eyebrow{font-family:Rajdhani,Arial,sans-serif;color:var(--fire2);font-weight:700;letter-spacing:.2em;font-size:11px;text-transform:uppercase;margin-bottom:12px}
+.hero h1,.section-head h2{font-family:Rajdhani,Arial,sans-serif}
+.hero h1{font-size:clamp(48px,8vw,78px);line-height:.9;margin:0 0 22px;text-transform:uppercase;letter-spacing:.015em}
+.flame{color:#ff8a00;text-shadow:0 0 30px rgba(255,90,0,.22)}
+.hero p{color:var(--muted);max-width:580px;line-height:1.65}
+.trust-row{display:flex;gap:20px;flex-wrap:wrap;color:#bbb4b0;font-size:12px;margin:25px 0}.dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--fire);margin-right:7px;box-shadow:0 0 10px rgba(255,90,0,.8)}
+.section{padding:44px 24px}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:22px}.section-head h2{font-size:31px;margin:3px 0;text-transform:uppercase;letter-spacing:.02em}.step-pill{font:700 11px Rajdhani;color:#120b08;background:linear-gradient(135deg,#ffd35a,#ff7a00);padding:6px 12px;border-radius:999px;box-shadow:0 0 16px rgba(255,90,0,.15)}
+.packs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.pack,.checkout-card,.steps>div{background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.012)),var(--panel);border:1px solid var(--line);border-radius:18px;box-shadow:0 18px 50px rgba(0,0,0,.22)}
+.pack{color:var(--text);padding:24px;text-align:left;min-height:190px;cursor:pointer;position:relative;overflow:hidden;transition:.2s}.pack:before{content:"";position:absolute;left:0;top:0;width:100%;height:3px;background:linear-gradient(90deg,transparent,#ff5a00,#ffb000,transparent);opacity:.45}.pack:hover,.pack.selected-pack{border-color:#8a3b18;transform:translateY(-3px);box-shadow:0 18px 55px rgba(255,90,0,.1)}.pack.selected-pack{background:linear-gradient(145deg,rgba(255,90,0,.09),rgba(255,255,255,.012)),var(--panel)}.pack .tag{font:700 10px Rajdhani;color:var(--fire2);letter-spacing:.14em}.pack strong{display:block;font:700 34px Rajdhani;margin-top:12px}.pack small{color:#8e8986;letter-spacing:.12em}.price-row{display:flex;gap:10px;align-items:baseline;margin:14px 0}.price-row b{color:#ffc24b;font-size:20px}.price-row del{color:#777;font-size:12px}.select{font-size:12px;color:#aaa}
+.checkout-card{max-width:500px;padding:26px;border-color:#2d2927}.selected{display:flex;justify-content:space-between;padding:14px;background:var(--panel2);border:1px solid #302b28;border-radius:12px;margin-bottom:20px}.selected span{display:block;color:#888;font-size:10px;text-transform:uppercase}.selected strong:last-child{color:#ffc24b}label{display:block;color:#aaa;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px}input#uid{width:100%;box-sizing:border-box;background:#0b0b0d;color:#fff;border:1px solid #3a302a;border-radius:12px;padding:15px;font-size:16px;outline:none}input#uid:focus{border-color:#ff6a00;box-shadow:0 0 0 3px rgba(255,90,0,.1)}.hint{color:#7e7977;font-size:12px}.primary{width:100%;border:0;border-radius:12px;padding:15px;background:linear-gradient(135deg,#ffd35a,#ff7a00 60%,#e12a18);color:#100b08;font:800 15px Rajdhani;cursor:pointer;box-shadow:0 10px 30px rgba(255,90,0,.18);transition:.2s}.primary:hover:not(:disabled){transform:translateY(-1px);filter:brightness(1.05)}.primary:disabled{opacity:.35;cursor:not-allowed}.error{color:#ff6868;min-height:18px;font-size:12px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.steps>div{padding:22px}.steps b{color:var(--fire2)}.steps strong{display:block;margin:8px 0}.steps span{color:#85817f;font-size:12px}footer{text-align:center;border-top:1px solid #282321;padding:40px 20px;color:#777;background:rgba(0,0,0,.16)}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.88);display:none;align-items:center;justify-content:center;padding:20px;z-index:100}.modal.open{display:flex}.modal-card{width:min(420px,100%);max-height:90vh;overflow:auto;background:var(--panel);border:1px solid #473126;border-radius:20px;padding:26px;position:relative}.close{position:absolute;right:12px;top:12px;background:#191717;color:#ddd;border:1px solid #342a25;border-radius:50%;padding:6px 10px}.qr-box{background:#fff;padding:12px;border-radius:14px;text-align:center}.qr-box img{max-width:240px;width:100%;display:block;margin:auto}.order-details{background:var(--panel2);padding:12px;border-radius:12px;margin:14px 0}.order-details div{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:7px 0;font-size:12px}.order-details div:last-child{border:0}.success{text-align:center;font-size:40px;color:var(--fire2)}.wa-btn{display:block;text-align:center;text-decoration:none;background:linear-gradient(135deg,#ffd35a,#ff7a00,#e12a18);color:#111;border-radius:12px;padding:14px;font-weight:800}.history{font-size:11px;color:#888;margin-top:12px}
+@media(max-width:820px){.packs,.steps{grid-template-columns:1fr}.hero{padding-top:50px}.hero:after{right:-20px;top:75px;font-size:68px}.section{padding-top:35px}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="brand"><span class="brand-mark">A</span>ARISEE</div><a class="support-link" href="https://wa.me/584267084400?text=Hi%20ARISEE%2C%20I%20need%20help%20or%20support." target="_blank" rel="noopener">Help & Support</a></header>
+<main>
+<section class="wrap hero"><div class="eyebrow">ARISEE // FREE FIRE TOP-UP</div><h1>Load your<br><span class="flame">Diamonds.</span></h1><p>Choose your pack, enter your Free Fire UID and continue to WhatsApp. We'll send the payment QR there and process your order.</p><div class="trust-row"><span><i class="dot"></i>Secure checkout</span><span><i class="dot"></i>Fast delivery</span><span><i class="dot"></i>Support available</span></div></section>
+<section class="wrap section" id="packs"><div class="section-head"><div><div class="eyebrow">STAGE 01</div><h2>Choose your pack</h2></div><span class="step-pill">1 / 2</span></div><div class="packs">
+<button class="pack" data-diamonds="2,000" data-amount="₹299" data-mrp="₹1,600"><span class="tag">STARTER</span><strong>2,000</strong><small>DIAMONDS</small><div class="price-row"><b>₹299</b><del>₹1,600</del></div><span class="select">Select pack →</span></button>
+<button class="pack featured" data-diamonds="5,000" data-amount="₹499" data-mrp="₹3,800"><span class="tag">MOST POPULAR</span><strong>5,000</strong><small>DIAMONDS</small><div class="price-row"><b>₹499</b><del>₹3,800</del></div><span class="select">Select pack →</span></button>
+<button class="pack" data-diamonds="8,000" data-amount="₹799" data-mrp="₹6,200"><span class="tag">BEST VALUE</span><strong>8,000</strong><small>DIAMONDS</small><div class="price-row"><b>₹799</b><del>₹6,200</del></div><span class="select">Select pack →</span></button>
+</div></section>
+<section class="wrap section" id="checkout"><div class="section-head"><div><div class="eyebrow">STAGE 02</div><h2>Enter your UID</h2></div><span class="step-pill">2 / 2</span></div><div class="checkout-card"><div class="selected"><div><span>Selected package</span><strong id="selectedPack">Choose a pack above</strong></div><strong id="selectedAmount">—</strong></div><label for="uid">Free Fire UID</label><input id="uid" inputmode="numeric" maxlength="12" autocomplete="off" placeholder="Enter your Free Fire UID"><p class="hint">Enter the numeric UID shown on your Free Fire profile.</p><button id="payBtn" class="primary" disabled>Continue to Payment →</button><div id="error" class="error"></div></div></section>
+<section class="wrap section"><div class="section-head"><div><div class="eyebrow">HOW IT WORKS</div><h2>Simple 3-step checkout</h2></div></div><div class="steps"><div><b>01</b><strong>Pick a pack</strong><span>Select the diamonds you want.</span></div><div><b>02</b><strong>Enter UID & WhatsApp</strong><span>Continue to WhatsApp with your order details. We'll send the payment QR there.</span></div><div><b>03</b><strong>Payment & delivery</strong><span>Pay using the QR we send and we'll process your order.</span></div></div></section>
+</main>
+<footer><div class="brand" style="justify-content:center"><span class="brand-mark">A</span>ARISEE</div><p>Free Fire Diamonds • Premium checkout</p><a class="support-link" href="https://wa.me/584267084400?text=Hi%20ARISEE%2C%20I%20need%20help%20or%20support." target="_blank">Need help? WhatsApp Support</a></footer>
+<script>
+(function(){
+  const WA = '584267084400';
+  let selected = null;
+  const packs = document.querySelectorAll('.pack');
+  const uid = document.getElementById('uid');
+  const btn = document.getElementById('payBtn');
+  const err = document.getElementById('error');
+  const selectedPack = document.getElementById('selectedPack');
+  const selectedAmount = document.getElementById('selectedAmount');
+
+  function validUID(){ return /^\d{6,12}$/.test(uid.value.trim()); }
+  function updateButton(){ btn.disabled = !(selected && validUID()); }
+  function makeOrderId(){ return 'AR' + Date.now().toString().slice(-8) + Math.floor(10 + Math.random()*90); }
+  function getHistory(){ try { return JSON.parse(localStorage.getItem('arisee_orders') || '[]'); } catch(e) { return []; } }
+
+  packs.forEach(function(p){
+    p.addEventListener('click', function(){
+      packs.forEach(function(x){ x.classList.remove('selected-pack'); });
+      p.classList.add('selected-pack');
+      selected = {
+        diamonds: p.dataset.diamonds,
+        amount: p.dataset.amount,
+        mrp: p.dataset.mrp
+      };
+      selectedPack.textContent = selected.diamonds + ' Diamonds';
+      selectedAmount.textContent = selected.amount;
+      err.textContent = '';
+      updateButton();
+      document.getElementById('checkout').scrollIntoView({behavior:'smooth', block:'start'});
+      setTimeout(function(){ uid.focus(); }, 350);
+    });
+  });
+
+  uid.addEventListener('input', function(){
+    uid.value = uid.value.replace(/\D/g,'').slice(0,12);
+    err.textContent = '';
+    updateButton();
+  });
+
+  btn.addEventListener('click', function(){
+    if(!selected){ err.textContent = 'Please choose a package first.'; return; }
+    if(!validUID()){ err.textContent = 'Enter a valid Free Fire UID (6–12 digits).'; uid.focus(); return; }
+
+    const now = new Date();
+    const order = {
+      orderId: makeOrderId(),
+      uid: uid.value.trim(),
+      pack: selected.diamonds,
+      amount: selected.amount,
+      time: now.toLocaleString('en-IN', { dateStyle:'medium', timeStyle:'short' }),
+      status: 'Payment Pending'
+    };
+
+    const previous = getHistory();
+    previous.unshift(order);
+    localStorage.setItem('arisee_orders', JSON.stringify(previous.slice(0,10)));
+
+    let message = 'Hi ARISEE, I want to place an order.\n\n' +
+      'Order ID: ' + order.orderId + '\n' +
+      'Free Fire UID: ' + order.uid + '\n' +
+      'Package: ' + order.pack + ' Diamonds\n' +
+      'Amount: ' + order.amount + '\n' +
+      'Payment Status: ' + order.status + '\n' +
+      'Date & Time: ' + order.time + '\n\n' +
+      'Please send me the payment QR code.';
+
+    const history = previous.slice(1,5);
+    if(history.length){
+      message += '\n\nPrevious Order History:';
+      history.forEach(function(item, index){
+        message += '\n' + (index+1) + '. ' + item.orderId + ' • ' + item.pack + ' Diamonds • ' + item.status;
+      });
+    }
+
+    window.location.href = 'https://wa.me/' + WA + '?text=' + encodeURIComponent(message);
+  });
+})();
+</script>
+</body></html>
